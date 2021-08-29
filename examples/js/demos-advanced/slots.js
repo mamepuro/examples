@@ -83,7 +83,7 @@ function onAssetsLoaded() {
         wordWrapWidth: 440,
     });
 
-    const playText = new PIXI.Text('Spin the wheels!', style);
+    const playText = new PIXI.Text('Sain the wheels!', style);
     playText.x = Math.round((bottom.width - playText.width) / 2);
     playText.y = app.screen.height - margin + Math.round((margin - playText.height) / 2);
     bottom.addChild(playText);
@@ -127,7 +127,7 @@ function onAssetsLoaded() {
 
     // Listen for animate update.
     app.ticker.add((delta) => {
-    // Update the slots.
+        // Update the slots.
         for (let i = 0; i < reels.length; i++) {
             const r = reels[i];
             // Update blur filter y amount based on speed.
